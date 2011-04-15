@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+	<title>WallBoard</title>
+
+	<meta name="author" content="Dewak S.A." /> 
+	<meta name="title" content="WallBoard" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<link rel="stylesheet" href="css/base.css" type="text/css" />
+    
+
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script>
+	
+</head>
+<body>
+
+<div class="wrapper">
+	
+	<div id="wallboard">
+		
+    	<div id="cabezote">
+			<img src="images/logo.png" width="127" height="73" style="margin:10px 0 0 10px"/>    
+            
+		<div id="taskbar">
+			
+			<div class="menu">
+				<div class="menu-item settings-btn">
+					<a href="javascript:;">Settings</a>
+				
+					<div class="menu-item-content">
+						<table class="table-style-1">
+							<tr>
+								<td width="30%"><label for="field-id">Field Name</label></td>
+								<td width="70%"><input type="text" name="" value="" id="field-id" /></td>
+							</tr>
+							<tr>
+								<td><label for="field-2">Field Name</label></td>
+								<td>
+									<select id="field-2">
+										<option value="test"> Test</option>
+										<option value="test2"> Test 2</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td><label for="field-3">Field Name</label></td>
+								<td><textarea id="field-3">My textarea</textarea></td>
+							</tr>
+							
+							<tr>
+								<td colspan="2" align="center"><input type="submit" value="Guardar" class="button" /></td>
+							</tr>
+
+
+						</table>
+						
+						
+					</div>
+				</div>
+				
+				<div class="menu-item logout-btn">
+					<a href="javascript:;">Logout</a>
+				</div>
+				
+			</div>
+            
+          </div>
+          
+         </div><!-- fin cabezote -->
+          
+         </div>
+         
+         
+       
+	
+		<div>
+		
+		<div id="portlets">
+   
+          <div class="columns-2">
+            
+            <div class="column first">
+             	<div class="portlet">
+             		 <div class="header"><p class="title">Departments</p></div>
+             		 <div id="widgetDepartments" class="content">Loading Module ...</div>
+             	</div>
+             
+                 <div class="portlet2">
+                      <div class="header"><p class="title2">New Tickets</p></div>
+                      <div id="widgetNewTickets" class="content">
+                      
+                    	 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr class="tabla-title">
+                                <td class="borde-tablas padding-tablas">Ticket ID</td>
+                                <td class="padding-tablas">Subject</td>
+                              </tr>
+                              <tr class="tabla1">
+                                <td class="borde-tablas padding-tablas">2627</td>
+                                <td class="padding-tablas">Reports Kayako V4</td>
+                              </tr>
+                              <tr class="tabla2">
+                                <td class="borde-tablas padding-tablas">2627</td>
+                                <td class="padding-tablas">Reports Kayako V4</td>
+                              </tr>
+                              <tr class="tabla1">
+                                <td class="borde-tablas padding-tablas">2627</td>
+                                <td class="padding-tablas">Reports Kayako V4</td>
+                              </tr>
+                              <tr class="tabla2">
+                                <td class="borde-tablas padding-tablas">2627</td>
+                                <td class="padding-tablas">Reports Kayako V4</td>
+                              </tr>
+                              <tr class="tabla1">
+                                <td class="borde-tablas padding-tablas">2627</td>
+                                <td class="padding-tablas">Reports Kayako V4</td>
+                              </tr>
+                        </table>
+
+                      
+                      </div>
+                 </div>
+             
+           </div>
+            
+            <div class="column last">
+             
+                 <div class="portlet">
+                      <div class="header">Statuses</div>
+                      <div id="widgetStatuses" class="content">Loading Module ...</div>
+                 </div>
+                 
+                 <div class="portlet">
+                      <div class="header">Over Due Tickets</div>
+                      <div id="widgetOverDueTickets" class="content">Loading Module ...</div>
+                 </div>
+             
+            </div>
+          </div>
+			
+		<div class="clr"></div>
+		</div>
+		
+	</div>
+
+	<script type="text/javascript" src="js/wallboard.js"></script>
+    
+    
+<div class="push"></div>
+</div> <!-- fin contenedor-global -->  
+
+
+
+<div class="footer">
+           <div id="copy">
+           		<div id="copy-content">
+                    <p>© 2008 - 2011 Dewak S.A. | Privacy
+               			www.dewak.com
+                	</p>
+
+				</div>
+	</div> <!-- fin copy -->
+        </div>
+
+
+
+</body>
+</html>
+    
+            
