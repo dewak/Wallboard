@@ -113,7 +113,7 @@ function handleServerResponse_statuses()
 	  	myChart.setBarColor('#a8b72a');
 	  	myChart.setBarOpacity(0.8);
 	  	myChart.setBarBorderColor('#D9EDF7');
-	  	myChart.setBarValues(false);
+	  	myChart.setBarValues(true);
 	  	myChart.setTitleColor('#8C8383');
 	  	myChart.setAxisColor('#777E81');
 	  	myChart.setAxisValuesColor('#777E81');

@@ -4,7 +4,7 @@
 /* Source Copyright 2011 Dewak S.A.
 /* Unauthorized reproduction is not allowed
 /* ------------------------------------------------
-/* $Date: 2011-04-11 18:40:04 $
+/* $Date: 2011-05-12 16:34:34 $
 /* $Author: diego $
 */
 
@@ -102,10 +102,12 @@ class dbCore
 		if ( $this->persistent == false )
 		{
 			$this->linkid = @mysql_connect( $this->hostname.iif( !empty( $this->port ), ":".intval( $this->port ) ), $this->username, $this->password, true );
+			mysql_set_charset('utf8', $this->linkid);
 		}
 		else
 		{
 			$this->linkid = @mysql_pconnect( $this->hostname.iif( !empty( $this->port ), ":".intval( $this->port ) ), $this->username, $this->password, true );
+			mysql_set_charset('utf8', $this->linkid);
 		}
 		if ( $this->linkid )
 		{

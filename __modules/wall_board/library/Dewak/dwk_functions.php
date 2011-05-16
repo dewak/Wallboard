@@ -3,7 +3,7 @@
 /* Source Copyright 2011 Dewak S.A.
 /* Unauthorized reproduction is not allowed
 /* ------------------------------------------------
-/* $Date: 2011-04-11 18:40:05 $
+/* $Date: 2011-05-11 18:52:28 $
 /* $Author: diego $
 */
 
@@ -16,7 +16,8 @@ $contents = fread($fp, filesize("./../../../../__swift/files/".$archivo));
 fclose($fp); 
 
 $iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_ECB);
-$iv = mcrypt_create_iv($iv_size, "1");
+
+$iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
 
 $decr2=trim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, "DewakFreeProduct", base64_decode($contents), MCRYPT_MODE_ECB, $iv)); 
 $decr2=base64_decode($decr2);
