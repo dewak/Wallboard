@@ -421,6 +421,12 @@ function getOverDueTickets($staffid){
 			}
 		}
 		
+		if($where!=""){
+				$where.=" AND( resolutionduedateline < ".time()." OR (duetime!=0 AND duetime< ".time()."))";
+			}else{
+				$where.=" WHERE ( resolutionduedateline < ".time()." OR (duetime!=0 AND duetime< ".time()."))";
+			}
+		
 		$sql="select * from ".TABLE_PREFIX."tickets ".$where." order by duetime asc Limit ".$settings["overduetickets"];
 		
 		$_dbCore->query($sql);

@@ -1,6 +1,18 @@
 <?php
 
 function renderLoginBox($request){
+	if(!isset($request["user"])){
+		$request["user"]="";
+	}
+	
+	if(!isset($request["password"])){
+		$request["password"]="";
+	}
+	
+	if(!isset($request["error"])){
+		$request["error"]="";
+	}
+	
 	echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -69,7 +81,7 @@ function renderLoginBox($request){
         <div class="footer">
            <div id="copy">
            		<div id="copy-content">
-                    <p>© 2008 - 2011 Dewak S.A. | Privacy
+                    <p>Â© 2008 - 2011 Dewak S.A. | Privacy
                			www.dewak.com
                 	</p>
 
@@ -92,8 +104,7 @@ function renderDashboard(){
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
 <head>
 
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
 	<title>WallBoard</title>
 
 	<meta name="author" content="Dewak S.A." /> 
