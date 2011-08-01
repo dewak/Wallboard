@@ -428,8 +428,8 @@ function getOverDueTickets($staffid){
 			}
 		
 		$sql="select * from ".TABLE_PREFIX."tickets ".$where." order by duetime asc Limit ".$settings["overduetickets"];
-		
 		$_dbCore->query($sql);
+		
 		while($_dbCore->nextRecord()){
 			$return[$_dbCore->Record["ticketid"]]=$_dbCore->Record;
 		}

@@ -1,5 +1,4 @@
 <?php
-
 function renderLoginBox($request){
 	if(!isset($request["user"])){
 		$request["user"]="";
